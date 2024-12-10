@@ -1,0 +1,136 @@
+@import 'base/base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --base-white: 255, 255, 255;
+    --base-1: 252, 252, 253;
+    --base-2: 247, 247, 248;
+    --base-3: 241, 241, 243;
+    --base-4: 228, 228, 231;
+    --base-5: 204, 204, 204;
+    --base-6: 179, 179, 179;
+    --base-7: 152, 152, 154;
+    --base-8: 126, 126, 129;
+    --base-9: 102, 102, 102;
+    --base-10: 89, 89, 89;
+    --base-11: 77, 77, 77;
+    --base-12: 64, 64, 64;
+    --base-13: 51, 51, 51;
+    --base-14: 38, 38, 38;
+    --base-15: 26, 26, 26;
+    --base-16: 20, 20, 20;
+    --base-black: 0, 0, 0;
+
+    --primary-1: 252, 248, 233;
+    --primary-2: 249, 240, 207;
+    --primary-3: 251, 233, 167;
+    --primary-4: 245, 220, 127;
+    --primary-5: 245, 212, 92;
+    --primary-6: 244, 205, 65;
+    --primary-7: 242, 199, 44;
+    --primary-8: 68, 54, 4;
+
+    --success-1: 236, 255, 217;
+    --success-2: 206, 254, 159;
+    --success-3: 179, 249, 109;
+    --success-4: 143, 215, 72;
+    --success-5: 121, 195, 46;
+    --success-6: 90, 163, 16;
+    --success-7: 64, 126, 0;
+
+    --warning-1: 255, 245, 191;
+    --warning-2: 255, 232, 113;
+    --warning-3: 244, 214, 56;
+    --warning-4: 221, 192, 46;
+    --warning-5: 186, 161, 33;
+    --warning-6: 152, 13, 15;
+    --warning-7: 126, 106, 0;
+
+    --error-1: 252, 198, 198;
+    --error-2: 255, 109, 109;
+    --error-3: 255, 58, 58;
+    --error-4: 221, 39, 39;
+    --error-5: 186, 27, 27;
+    --error-6: 154, 12, 12;
+    --error-7: 126, 0, 0;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --font-inter: 'Inter', sans-serif;
+
+    --text-xs: 0.75rem; /* 12px */
+    --text-lh-xs: 1.125rem; /* 18px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-lh-sm: 1.3125rem; /* 21px */
+    --text-md: 1rem; /* 16px */
+    --text-lh-md: 1.5rem; /* 24px */
+    --text-lg: 1.125rem; /* 18px */
+    --text-lh-lg: 1.6875rem; /* 27px */
+    --text-xl: 1.25rem; /* 20px */
+    --text-lh-xl: 1.875rem; /* 30px */
+
+    --title-h3-xs: 1.25rem; /* 20px */
+    --title-h3-lh-xs: 1.875rem; /* 30px */
+    --title-h3-ls-xs: 0.063rem; /* 1px */
+    --title-h3-md: 1.5rem; /* 24px */
+    --title-h3-lh-md: 2.25rem; /* 36px */
+    --title-h3-ls-md: 0.075rem; /* 1.2px */
+    --title-h3-lg: 1.75rem; /* 28px */
+    --title-h3-lh-lg: 2.625rem; /* 42px */
+    --title-h3-ls-lg: 0.1rem; /* 1.6px */
+
+    --title-h2-xs: 1.75rem; /* 28px */
+    --title-h2-lh-xs: 2.625rem; /* 42px */
+    --title-h2-ls-xs: 0.088rem; /* 1.4px */
+    --title-h2-md: 2.5rem; /* 40px */
+    --title-h2-lh-md: 3.75rem; /* 60px */
+    --title-h2-ls-md: 0.125rem; /* 2px */
+    --title-h2-lg: 3.25rem; /* 52px */
+    --title-h2-lh-lg: 4.875rem; /* 78px */
+    --title-h2-ls-lg: 0.163rem; /* 2.6px */
+
+    --title-h1-xs: 2rem; /* 32px */
+    --title-h1-lh-xs: 3rem; /* 48px */
+    --title-h1-ls-xs: 0.1rem; /* 1.6px */
+    --title-h1-md: 3.375rem; /* 54px */
+    --title-h1-lh-md: 5.063rem; /* 81px */
+    --title-h1-ls-md: 0.169rem; /* 2.7px */
+    --title-h1-lg: 4rem; /* 64px */
+    --title-h1-lh-lg: 6rem; /* 96px */
+    --title-h1-ls-lg: 0.2rem; /* 3.2px */
+
+    --spacing-0: 0;
+    --spacing-1: 0.25rem; /* 4px */
+    --spacing-2: 0.5rem; /* 8px */
+    --spacing-3: 0.75rem; /* 12px */
+    --spacing-4: 1rem; /* 16px */
+    --spacing-5: 1.25rem; /* 20px */
+    --spacing-6: 1.5rem; /* 24px */
+    --spacing-7: 2rem; /* 32px */
+    --spacing-8: 2.25rem; /* 36px */
+    --spacing-9: 2.5rem; /* 40px */
+    --spacing-10: 3rem; /* 48px */
+    --spacing-11: 3.75rem; /* 60px */
+    --spacing-12: 4.5rem; /* 72px */
+    --spacing-13: 5rem; /* 80px */
+    --spacing-14: 7.5rem; /* 120px */
+    --spacing-15: 10rem; /* 160px */
+    --spacing-16: 12.5rem; /* 200px */
+
+    --border-radius-sm: 0.375rem; /* 6px */
+    --border-radius-md: 0.5rem; /* 8px */
+    --border-radius-lg: 0.625rem; /* 10px */
+    --border-radius-full: 100%; /* 100% */
+  }
+}
