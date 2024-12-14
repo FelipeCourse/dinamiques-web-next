@@ -304,6 +304,8 @@ NEXT_PUBLIC_JWT_SECRET=
 
 # Informe a url da API
 NEXT_PUBLIC_DINAMIQUES_API=http://localhost:3000/api/v1
+# Para ser possível acessar a API contida no container docker é necessário definir o valor conforme abaixo
+NEXT_PUBLIC_DINAMIQUES_API=http://host.docker.internal:3000/api/v1
 ```
 
 A API e o banco de dados estando em execução, basta executar:
