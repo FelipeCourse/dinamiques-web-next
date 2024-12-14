@@ -111,6 +111,11 @@ export const contentRendererConfig = {
       {...props}
     />
   ),
+  p: ({ children, ...props }: React.HTMLAttributes<HTMLElement>) => (
+    <p className="mb-7" {...props}>
+      {children}
+    </p>
+  ),  
   a: ({
     href,
     children,
